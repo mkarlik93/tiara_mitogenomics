@@ -68,8 +68,9 @@ This database was created by developers of [mitoZ](https://github.com/linzhi2013
 
 The main result is a tabular file with a suffix "_tabulated_result.tsv" that contains a names of contigs with counts of mitochondrial genes. 
 
-Name    Length  GC_content      ND2     ND5     COX3    ATP8    ND6     ND4L    ND4     ND3     ND1     COX1    ATP6    CYTB    COX2
-Dummy_contig1 3072    23.14   0       0       1       0       0       0       1       0       0       7       0       1       0
+Name | Length | GC_content | ND2 | ND5 | COX3 | ATP8 | ND6 | ND4L | ND4 | ND3 | ND1 | COX1 | ATP6 | CYTB | COX2 |
+|--- | ------ | ---------- | --  | --- | ---- | ---- | --- | ---- | --- | --- | --- | ---- | ---- | ---- | ---- |
+Dummy_contig1 | 3072 | 23.14 | 0 |  0  |  1   |  0   | 0   |  0  |  1 |  0  | 0 | 7 | 0  |  1 | 0 |
 
 Also you will find two subdirectories named "tiara_results" and "invidual_contigs_res". First contains native results of tiara analysis, the second one contains DNA and AA sequences originated from mitochondrial contigs with raw mmseqs2 reciprocal analysis.  
 
