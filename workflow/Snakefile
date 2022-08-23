@@ -1,0 +1,38 @@
+
+configfile: "config/config.yaml"
+
+from snakemake.utils import min_version
+import os
+
+min_version("5.18.0")
+
+PACKAGEDIR = os.getcwd()
+SCRIPTSDIR = "workflow/scripts/"
+ENVDIR = "workflow/envs/"
+ROOTDIR = "/"
+
+include:
+    "rules/get_config.smk"
+
+include:
+    "rules/common.smk"
+
+workdir:
+    OUTPUTDIR
+
+INPUTS = []
+
+run_name = get_run_name()
+
+if mito_pipeline == True:
+    include:
+        "rules/mt_find_annotate.smk"
+    INPUTS.append(f"reciprocal.done")
+    INPUTS.append(f"gathering.done")
+    INPUTS.append(f"cleaning.done")
+
+rule ALL:
+    input:
+        expand("{input}", input=INPUTS)
+    output:
+        touch('workflow.done')

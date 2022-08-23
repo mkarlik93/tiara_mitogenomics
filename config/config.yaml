@@ -1,0 +1,15 @@
+
+run_name: test_run
+assembly_path: "/home/karlicki/dla_michala_od_chinczyka/mock_B_HQ_assembly/mitochondrion_contigs.fasta"
+outputdir: 'test_run/'
+
+Pipeline_settings :
+
+  mito_pipline : True
+
+
+General_parameters:
+
+  min_length: 3000
+  temporary_directory: "~/."
+  database: "~/dla_michala_od_chinczyka/mock_B_HQ_assembly/Nematoda_CDS_protein.fa"
