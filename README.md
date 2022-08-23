@@ -10,7 +10,7 @@ Before analysis you need to set up conda environment with snakemake installed.
 
 *Usage*
 
-`` git clone tiara_mitogenomics``
+`` git clone https://github.com/mkarlik93/tiara_mitogenomics``
 
 `` cd tiara_mitogenomics``
 
