@@ -22,7 +22,7 @@ When you modified config file you can  start your analysis.
 
 `` snakemake --use-conda --cores 12``
 
-MT_database subfolder contains representative proteomes specific for 12 group of Metazoa:
+MT_database can be downloaded from [figshare](https://figshare.com/ndownloader/articles/20552970/versions/1) contains representative proteomes specific for 12 group of Metazoa:
 
 - Annelida-segmented-worms
 - Arthropoda
@@ -36,6 +36,8 @@ MT_database subfolder contains representative proteomes specific for 12 group of
 - Nemertea-ribbon-worms
 - Platyhelminthes-flatworms
 - Porifera-sponges
+
+Please uzip datapack and specify path in config file
 
 Also you can find concatenated proteomes from all groups in Animal_CDS_protein.fa
 
