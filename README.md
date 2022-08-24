@@ -1,6 +1,6 @@
-**Tiara_mitogenomics**
+***Tiara_mitogenomics***
 
-This is a [snakemake](https://snakemake.readthedocs.io/en/stable/) workflow called *tiara_mitogenomics* for detection,
+This is a [snakemake](https://snakemake.readthedocs.io/en/stable/) workflow for detection,
 and preliminary annotation mitochondrial genomes of Metazoans (Animals) such as Nematodes
 in an assembled metagenomic data.
 
