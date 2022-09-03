@@ -1,5 +1,6 @@
 import glob
 
+#To do add probabilites to config file
 
 rule run_tiara:
     """
@@ -20,7 +21,7 @@ rule run_tiara:
     conda:
         "tiara-test-env_2"
     shell:
-        "tiara -i {params.input_path} -m {params.min_length} --probabilities -o {params.output_name} --tf all -t {threads} -v \
+        "tiara -i {params.input_path} -m {params.min_length} -p 0.5 0.5 --probabilities -o {params.output_name} --tf all -t {threads} -v \
          && touch {output}"
 
 rule run_prodigial:
