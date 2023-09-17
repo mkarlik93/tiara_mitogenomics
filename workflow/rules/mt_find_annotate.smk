@@ -19,7 +19,7 @@ rule run_tiara:
     threads:
         10
     conda:
-        "tiara-test-env_2"
+        "../envs/tiara.yaml"
     shell:
         "tiara -i {params.input_path} -m {params.min_length} -p 0.5 0.5 --probabilities -o {params.output_name} --tf all -t {threads} -v \
          && touch {output}"
