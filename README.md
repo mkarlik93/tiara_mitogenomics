@@ -1,20 +1,16 @@
 ***Tiara_mitogenomics***
 
-This is a [snakemake](https://snakemake.readthedocs.io/en/stable/) workflow for detection,
-and preliminary annotation mitochondrial genomes of Metazoans (Animals) such as Nematodes
-in an assembled metagenomic data.
+This is a [snakemake](https://snakemake.readthedocs.io/en/stable/) workflow for the reference-free detection and annotation of mitochondrial genomes of Metazoans (Animals), such as Nematodes, from assembled metagenomic data.
 
-Note!
+Note
 
-Before analysis you need to set up conda environment with snakemake installed. 
+Before running the analysis, set up a conda environment with Snakemake installed.
 
 *Usage*
 
-`` git clone https://github.com/mkarlik93/tiara_mitogenomics``
-
-`` cd tiara_mitogenomics``
-
-`` conda activate snakemake``
+''git clone https://github.com/mkarlik93/tiara_mitogenomics''
+''cd tiara_mitogenomics''
+''conda activate snakemake''
 
 Input file, database and minimum length must be specified in config file as full paths - a template of config file you can find in config subfolder and looks like this:
 
@@ -36,7 +32,6 @@ General_parameters:
   database: "Nematoda_CDS_protein.fa" # A full path to the database
 
 ```
-
 
 When you modified config file (which must be located in config subfolder) you can start your analysis. 
 
@@ -76,4 +71,4 @@ Also you will find two subdirectories named "tiara_results" and "invidual_contig
 
 *Citation*
 
-Using this package please cite [tiara](https://github.com/ibe-uw/tiara)
+Using this package please cite [tiara](https://github.com/ibe-uw/tiara) as well as [published results] of the pipeline (https://www.sciencedirect.com/science/article/abs/pii/S003807172400302X)
