@@ -1,6 +1,8 @@
 ***Tiara_mitogenomics***
 
-This is a [snakemake](https://snakemake.readthedocs.io/en/stable/) workflow for the reference-free detection and annotation of mitochondrial genomes of Metazoans (Animals), such as Nematodes, from assembled metagenomic data.
+This is a [snakemake](https://snakemake.readthedocs.io/en/stable/) workflow for the reference-free detection and annotation of mitochondrial genomes of Metazoans (Animals), such as Nematodes, from assembled metagenomic data. 
+
+The pipeline has been published in the paper: "[Soil nematode community profiling using reference-free mito-metagenomics](https://doi.org/10.1016/j.soilbio.2024.109613)"
 
 Note
 
@@ -71,4 +73,4 @@ Also you will find two subdirectories named "tiara_results" and "invidual_contig
 
 *Citation*
 
-Using this package please cite [tiara](https://github.com/ibe-uw/tiara) as well as [published results] of the pipeline (https://www.sciencedirect.com/science/article/abs/pii/S003807172400302X)
+Using this package please cite [tiara](https://github.com/ibe-uw/tiara) as well as [published results](https://www.sciencedirect.com/science/article/abs/pii/S003807172400302X) of the pipeline.
