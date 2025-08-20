@@ -10,9 +10,11 @@ Before running the analysis, set up a conda environment with Snakemake installed
 
 *Usage*
 
-```git clone https://github.com/mkarlik93/tiara_mitogenomics
-cd tiara_mitogenomics
-conda activate snakemake```
+```git clone https://github.com/mkarlik93/tiara_mitogenomics```
+
+```cd tiara_mitogenomics```
+
+```conda activate snakemake```
 
 Input file, database and minimum length must be specified in config file as full paths - a template of config file you can find in config subfolder and looks like this:
 
